@@ -47,13 +47,15 @@
     }
 
     &__btn-become {
-        padding: 0 17px;
+        padding: 3px 17px 0;
         border-radius: 50px;
         background-color: $blue;
-        min-width: 140px;
+        width: 140px;
         word-wrap: break-word;
         text-align: center;
-
+        line-height: 0px;
+        width: 100%;
+        height: 35px;
         a {
             color: white;
             line-height: 28px;
@@ -122,19 +124,70 @@
 }
 
 .header__menu {
-    height: 80px;
+    padding: 20px 0;
+
+}
+
+.header__menu-search {
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+
+    button {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: $blue;
+        width: 70px;
+        height: 45px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        
+    }
+
+
+    form input {
+        height: 45px;
+        width: 100%;
+        border: solid #d9dfe5 1px;
+        border-radius: 100px;
+        padding: 0px 75px 0px 25px;
+
+        &::placeholder {
+            color: #898f96;
+            font-size: 15px;
+            line-height: 30px;
+            font-weight: 500;
+
+
+        }
+
+        &:focus {
+            outline: none;
+            border: solid 1px #000;
+            border-radius: 100px;
+
+        }
+
+
+    }
 }
 
 .header__nav {
+    display: flex;
     align-items: center;
     justify-content: space-between;
 
     &__menu-list {
         display: flex;
         align-items: center;
-        text-transform: uppercase;        
-        li+li{
-            margin-left: 30px;
+        text-transform: uppercase;
+
+        li+li {
+            margin-left: 25px;
             font-size: 15px;
         }
     }
