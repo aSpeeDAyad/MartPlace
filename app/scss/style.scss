@@ -1,7 +1,141 @@
 @import 'vars';
 @import 'global';
-
-   
-    
+@import 'fonts';
 
 
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.header__top {
+    background-color: $grey;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        font-family: 'Quicksand', sans-serif;
+
+
+        a {
+            padding-left: 3px;
+            color: black;
+            font-weight: 700;
+            font-size: 30px;
+
+
+            span {
+                color: $blue;
+            }
+        }
+    }
+
+    &__btns {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    &__btn-become {
+        padding: 0 17px;
+        border-radius: 50px;
+        background-color: $blue;
+        min-width: 140px;
+        word-wrap: break-word;
+        text-align: center;
+
+        a {
+            color: white;
+            line-height: 28px;
+            font-size: 14px;
+        }
+    }
+
+    &__btn__box-wraper {
+        display: flex;
+        justify-content: space-between;
+        min-width: 140px;
+        margin-left: 50px;
+        padding-right: 20px;
+        align-items: center;
+
+        a {
+            line-height: 0;
+        }
+
+    }
+
+    &__btn__box-form {
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        justify-content: space-between;
+    }
+
+    &__btn__box-avatar {
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+
+    }
+
+    &__status {
+        &-wraper {
+            flex-direction: column;
+            display: flex;
+            max-width: 150px;
+            padding-left: 20px;
+
+        }
+
+        &-balance {
+            color: $blue;
+            font-size: 15px;
+            line-height: 22px;
+            word-wrap: break-word;
+            max-width: 150px;
+            font-weight: 500;
+
+        }
+
+        &-user {
+            max-width: 150px;
+            padding-right: 5px;
+            word-wrap: break-word;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            color: #000;
+        }
+    }
+}
+
+.header__menu {
+    height: 80px;
+}
+
+.header__nav {
+    align-items: center;
+    justify-content: space-between;
+
+    &__menu-list {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;        
+        li+li{
+            margin-left: 30px;
+            font-size: 15px;
+        }
+    }
+}
