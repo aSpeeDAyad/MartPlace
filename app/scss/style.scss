@@ -240,7 +240,6 @@
         padding: 27px 10px;
         height: 55px;
         font-weight: 400;
-
     }
 
     &-view {
@@ -270,25 +269,7 @@
     margin-left: 15px;
 
 }
-
-.arrow {
-    background-image: url(../images/arrow.png );
-    width: 15px;
-    height: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    bottom: 60px;
-    right: 305px;
-    
-}
-
-.arrow {
-    cursor: pointer;
-}
-
-.arrow.active {
+.arrow, .arrow.active {
     background-image: url(../images/arrow-rotated.png);
     width: 15px;
     height: 10px;
@@ -298,10 +279,13 @@
     position: absolute;
     bottom: 60px;
     right: 305px;
-    
+    transition: 1s;
+}
+.arrow {
+    background-image: url(../images/arrow.png );
 }
 
-.category__drop {
+.category__drop-list {
     display: none;
     background-color: #fff;
     padding-top: 20px;
@@ -311,7 +295,7 @@
     top: 30px;
     position: absolute;
     height: 300px;
-
+    text-align-last: left;
 
 
     li {
@@ -381,11 +365,25 @@
     left: 45px;
 }
 
-.create__form {
+.create__categories-list {
+    max-width: 200px;
+    width: 100%;
+    border: solid 1px $grey;
+    line-height: 0;
+    padding: 27px 20px;
+    margin-left: -3.5px;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    bottom: 38px;
+    right: 285px;
+}
 
+.create__form {
     text-align: left;
     padding: 37px 40px 37px 40px;
     padding-top: 37px;
+    display: flex;
+    justify-content: space-between;
 
     input {
         border: solid 1px $grey;
@@ -405,22 +403,6 @@
         }
     }
 
-    &-categories {
-        max-width: 200px;
-        width: 100%;
-        border: solid 1px $grey;
-        line-height: 0;
-        padding: 27px 20px;
-        margin-left: -3.5px;
-        border-radius: 0 10px 10px 0;
-
-        &:hover {
-            color: $blue;
-            transition: 1s;
-
-        }
-    }
-
     button {
         background-color: $blue;
         border-radius: 10px;
@@ -437,7 +419,17 @@
             border: solid black 1px;
         }
     }
+
+
+    &:hover {
+        color: $blue;
+        transition: 1s;
+
+    }
 }
+
+
+
 
 .products {
     height: 500px;
