@@ -3,6 +3,10 @@ $(function(){
 
     
     $('.weekly_product-item').slick({});  // подключаем slick-slider
+    $('.followers_items').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1
+    });  // подключаем slick-slider
 
     $('.slick-prev').html('<'); // меняем контент по дефолту с кнопкм слайдера
     $('.slick-next').html('>'); // 

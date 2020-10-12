@@ -671,7 +671,7 @@
             }
         }
 
-        &-teg  {
+        &-teg {
 
             &:focus {
                 outline: none;
@@ -684,12 +684,13 @@
             line-height: 0;
 
         }
-        &-teg.mixitup-control-active{
-             
-                background-color: $blue;
-                color: white;
-            }
-        
+
+        &-teg.mixitup-control-active {
+
+            background-color: $blue;
+            color: white;
+        }
+
 
         &-footer {
             &-wrapper {
@@ -802,7 +803,7 @@
         height: 45px;
         font-size: 15px;
         font-weight: 400;
-        
+
     }
 
     &_create_btns {
@@ -812,7 +813,7 @@
             line-height: 2px;
             margin-right: 10px;
             background-color: transparent;
-            
+
         }
     }
 
@@ -942,8 +943,19 @@
         padding: 26px 5px;
         color: #fff;
         line-height: 0;
-       
+
     }
 }
 
-  
+// Finish develope section  'Newest'
+// Finish develope section 'Followers'
+
+
+.followers {
+
+    padding: 120px 0px;
+    background-color: $grey;
+}
+
+// Finish develope section 'Followers'
+// Finish develope section  'Band-Advantages'
