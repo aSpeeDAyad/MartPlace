@@ -29,7 +29,9 @@
         a {
             padding-left: 3px;
             color: black;
-            font-weight: 700;
+            @include f700;
+            font-family: 'Quicksand', sans-serif;
+
             font-size: 30px;
 
 
@@ -43,7 +45,7 @@
         margin-left: auto;
         display: flex;
         align-items: center;
-        font-weight: 700;
+        @include f700;
     }
 
     &_btn-become {
@@ -108,7 +110,7 @@
             line-height: 22px;
             word-wrap: break-word;
             max-width: 150px;
-            font-weight: 500;
+            @include f500;
 
         }
 
@@ -116,7 +118,7 @@
             max-width: 150px;
             padding-right: 5px;
             word-wrap: break-word;
-            font-weight: 500;
+            @include f500;
             font-size: 16px;
             line-height: 16px;
             color: #000;
@@ -161,7 +163,7 @@
             color: #898f96;
             font-size: 15px;
             line-height: 30px;
-            font-weight: 500;
+            @include f500;
 
 
         }
@@ -216,7 +218,7 @@
     p {
         padding-top: 10px;
         line-height: 0;
-        font-weight: 700;
+        @include f700;
     }
 }
 
@@ -481,7 +483,7 @@
     &-title {
         color: black;
         font-size: 24px;
-        font-weight: 500;
+        @include f500;
     }
 
     &-text {
@@ -516,7 +518,7 @@
     border-radius: 25px;
     border: none;
     position: absolute;
-    top: -77px;
+    top: -74px;
     right: 97px;
     cursor: pointer;
     color: #fff;
@@ -533,7 +535,7 @@
 }
 
 .slick-next {
-    top: -77px;
+    top: -74px;
     right: 47px;
 }
 
@@ -552,7 +554,7 @@
 
     &_title {
         font-size: 30px;
-        font-weight: 500;
+        @include f500;
         padding: 40px 200px 40px 20px;
         color: black;
     }
@@ -585,7 +587,7 @@
     &_product-card {
         &-title {
             font-size: 24px;
-            font-weight: 500;
+            @include f500;
             color: black;
 
         }
@@ -615,7 +617,7 @@
 
         &-avtor {
             font-size: 15px;
-            font-weight: 500;
+            @include f500;
             padding-left: 8px;
             color: black;
 
@@ -638,7 +640,7 @@
             font-size: 15px;
             color: #7347c1;
             padding-left: 8px;
-            font-weight: 500;
+            @include f500;
 
             &:focus {
                 outline: none;
@@ -708,7 +710,7 @@
                 border-radius: 25px;
                 line-height: 0;
                 font-size: 15px;
-                font-weight: 500;
+                @include f500;
                 color: white;
 
                 &:focus {
@@ -720,7 +722,7 @@
                 margin-left: 45px;
                 position: relative;
                 font-size: 15px;
-                font-weight: 500;
+                @include f500;
 
                 &:focus {
                     outline: none;
@@ -748,7 +750,7 @@
                 margin-left: 45px;
                 position: relative;
                 font-size: 15px;
-                font-weight: 500;
+                @include f500;
 
                 &:focus {
                     outline: none;
@@ -819,6 +821,7 @@
 
 
     &_foto-product {
+
         align-items: center;
         display: flex;
         min-height: 230px;
@@ -834,6 +837,9 @@
         background: -ms-linear-gradient(left, rgba(100, 84, 185, 1) 0%, rgba(5, 119, 226, 1) 100%);
         background: linear-gradient(to right, rgba(100, 84, 185, 1) 0%, rgba(5, 119, 226, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6454b9', endColorstr='#0577e2', GradientType=1);
+        &:focus{
+            outline: none;
+        }
     }
 
     &_box {
@@ -853,7 +859,7 @@
         }
 
         &-title {
-            font-weight: 500;
+            @include f500;
             font-size: 20px;
         }
 
@@ -891,7 +897,7 @@
                 background-color: #e6f1fd;
                 color: $blue;
                 font-size: 15px;
-                font-weight: 500;
+                
             }
 
             &-btn-basket {
@@ -913,6 +919,9 @@
 }
 
 .newest_foto-product {
+    &:focus{
+        outline: none;
+    }
 
     &-psd-item {
         background-color: #3c6490;
@@ -957,5 +966,24 @@
     background-color: $grey;
 }
 
+.slick-slide.slick-cloned.slick-active{
+    &:focus{
+        outline: none ;  
+    }
+}
+ .newest_product-card-avtor-avatar{
+     margin-bottom: 0;
+     
+ }
+
+ .weekly_product-card-wrapper.newest_product-card-wrapper {
+     a:focus{
+        outline: none;
+     }
+ }
+
 // Finish develope section 'Followers'
 // Finish develope section  'Band-Advantages'
+
+
+

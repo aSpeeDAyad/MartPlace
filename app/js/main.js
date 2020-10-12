@@ -48,8 +48,7 @@ $(function(){
     var mixer = mixitup('.newest_items');
     
           
-   
-
+ 
         
         
     

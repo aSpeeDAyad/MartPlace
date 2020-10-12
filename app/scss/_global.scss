@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    
 }
 
 *,
@@ -11,7 +12,7 @@ html {
 a {
     text-decoration: none;
     display: inline-block;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand-Regular', sans-serif;
     font-size: 16px;
     line-height: 28px;
     color: $color-text;
@@ -26,11 +27,12 @@ li {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand-Regular', sans-serif;
     font-size: 16px;
     line-height: 28px;
     color: $color-text;
     font-weight: 400;
+    background-color: red ;
 }
 
 .container {
