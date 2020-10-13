@@ -11,3 +11,8 @@ $bgc:#284bce;
     font-family: 'Quicksand-Regular', sans-serif;
     font-weight: 700;
 }
+@mixin bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

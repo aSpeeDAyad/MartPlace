@@ -277,9 +277,7 @@
     background-image: url(../images/arrow-rotated.png);
     width: 15px;
     height: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include bg;
     position: absolute;
     bottom: 60px;
     right: 305px;
@@ -324,9 +322,7 @@
                 content: "";
                 position: absolute;
                 background-image: url(../images/arrow-right.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                @include bg;
                 width: 6px;
                 height: 12px;
                 bottom: 10px;
@@ -569,9 +565,7 @@
         background-image: url(..//images/foto-product.jpg);
         max-width: 555px;
         height: 450px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include bg;
         width: 100%;
     }
 
@@ -595,9 +589,7 @@
         &-avtor-avatar {
             width: 30px;
             height: 30px;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            @include bg;
             width: 100%;
             height: 100%;
 
@@ -837,7 +829,8 @@
         background: -ms-linear-gradient(left, rgba(100, 84, 185, 1) 0%, rgba(5, 119, 226, 1) 100%);
         background: linear-gradient(to right, rgba(100, 84, 185, 1) 0%, rgba(5, 119, 226, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6454b9', endColorstr='#0577e2', GradientType=1);
-        &:focus{
+
+        &:focus {
             outline: none;
         }
     }
@@ -897,7 +890,7 @@
                 background-color: #e6f1fd;
                 color: $blue;
                 font-size: 15px;
-                
+
             }
 
             &-btn-basket {
@@ -919,7 +912,7 @@
 }
 
 .newest_foto-product {
-    &:focus{
+    &:focus {
         outline: none;
     }
 
@@ -962,28 +955,103 @@
 
 .followers {
 
+    .newest_product-card-avtor-avatar {
+        margin-bottom: 0;
+    }
+
     padding: 120px 0px;
     background-color: $grey;
 }
 
-.slick-slide.slick-cloned.slick-active{
-    &:focus{
-        outline: none ;  
+.slick-slide.slick-cloned.slick-active {
+    &:focus {
+        outline: none;
     }
 }
- .newest_product-card-avtor-avatar{
-     margin-bottom: 0;
-     
- }
 
- .weekly_product-card-wrapper.newest_product-card-wrapper {
-     a:focus{
+
+.weekly_product-card-wrapper.newest_product-card-wrapper {
+    a:focus {
         outline: none;
-     }
- }
+    }
+}
 
 // Finish develope section 'Followers'
-// Finish develope section  'Band-Advantages'
+// Start develope section  'Band-Advantages'
+
+.band-advantages {
+    padding: 90px 0 !important;
+    background-color: #000;
+
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 200px;
+        word-wrap: break-word;
 
 
+    }
 
+    &-text {
+        color: #fff;
+        padding: 20px;
+    }
+
+    &-digitals {
+        font-size: 36px;
+        padding-top: 50px;
+        color: #feb71d
+    }
+
+    &-svg {
+        margin: 0 auto;
+        width: 50px;
+        height: 45px;
+        position: relative;
+    }
+}
+
+.ico-smile {
+    &:before {
+        content: "\e908";
+        position: absolute;
+        font-family: 'icomoon';
+        font-size: 50px;
+        right: 0;
+        top: 5px;
+        color: #77de51;
+    }
+
+    &+div {
+        color: #77de51;
+    }
+}
+
+.ico-people {
+    &:before {
+        content: "\e907";
+        position: absolute;
+        font-family: 'icomoon';
+        font-size: 50px;
+        right: 0;
+        top: 0px;
+        color: #ff6a6d;
+    }
+
+    &+div {
+        color: #ff6a6d;
+    }
+}
+
+.ico-cloud+div {
+    color: #58c9e9;
+}
+//  Finish develope section  'Band-Advantages'
+//  Start develope section  'Why'
