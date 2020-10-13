@@ -1,7 +1,27 @@
 
 $(function(){
 
-    
+
+    for ( let i of document.querySelectorAll(".count") ) {
+
+        let numberTop = i.getBoundingClientRect().top,
+            start = +i.innerHTML,
+            end = +i.dataset.max;
+      
+        window.addEventListener('scroll', function onScroll() {
+          if(window.pageYOffset > 0.6*numberTop - window.innerHeight) {
+            this.removeEventListener('scroll', onScroll);
+            let interval = this.setInterval(function() {
+              i.innerHTML = ++start;
+              if(start == end) {
+                clearInterval(interval);
+              }
+          }, 20);
+          }
+        });
+      }
+      
+ 
     $('.weekly_product-item').slick({});  // подключаем slick-slider
     $('.followers_items').slick({
         slidesToShow: 3,
@@ -47,14 +67,7 @@ $(function(){
 
     var mixer = mixitup('.newest_items');
     
-          
- 
-        
-        
-    
 
-
-    
     
     
     
