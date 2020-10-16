@@ -1,12 +1,4 @@
-@font-face {
-	font-family: 'Quicksand-Regular', 'sans-serif';
-	
-	src: url('..//fonts/Quicksand-Regular.woff2') format('woff2'),
-	     url('..//fonts/Quicksand-Regular.woff') format('woff');
-	
-    font-weight: 400;
-    font-display: swap;
-}
+
 @font-face {
 	font-family: 'icomoon';
 	src:  url('../fonts/icomoon.eot?nl8m3c');
@@ -33,7 +25,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
-  
+  .icon-magic:before {
+	content: "\e903";
+  }
   .icon-people_outline:before {
 	content: "\e907";
   }

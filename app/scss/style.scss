@@ -465,7 +465,7 @@
             &:hover {
                 border-radius: 4px;
                 background-color: rgb(255, 255, 255);
-                box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+                box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.5);
             }
         }
     }
@@ -514,7 +514,7 @@
     border-radius: 25px;
     border: none;
     position: absolute;
-    top: -74px;
+    top: -78px;
     right: 97px;
     cursor: pointer;
     color: #fff;
@@ -531,7 +531,7 @@
 }
 
 .slick-next {
-    top: -74px;
+    top: -78px;
     right: 47px;
 }
 
@@ -785,6 +785,14 @@
         border-radius: 40px;
         border-radius: 4px;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+
+        &:focus,
+        &:hover {
+            box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.5);
+        }
+
+
     }
 
     &_create_btns-view,
@@ -813,11 +821,11 @@
 
 
     &_foto-product {
-
+        margin-right: 20px !important;
         align-items: center;
         display: flex;
         min-height: 230px;
-        max-width: 360px;
+        max-width: 380px;
         width: 100%;
         height: 100%;
         background-image: none;
@@ -949,18 +957,86 @@
     }
 }
 
+
+
 // Finish develope section  'Newest'
-// Finish develope section 'Followers'
+// Start develope section 'Followers'
 
 
 .followers {
+    .newest_wrapper {
 
+        &:focus,
+        &:hover {
+            box-shadow: 0px 2px 35px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    
+    .slick-next {
+        border-radius: 25px;
+        border: none;
+        position: absolute;
+        top: -78px;
+        right: 80px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 25px;
+        background-color: transparent;
+        padding-top: 5px;
+
+        &:focus {
+            border-radius: 25px;
+            outline: none;
+            background-color: transparent;
+
+        }
+
+       
+    }
+    .slick-prev.slick-arrow {
+        right: 130px;
+        }
+
+   
     .newest_product-card-avtor-avatar {
         margin-bottom: 0;
     }
 
-    padding: 120px 0px;
+    padding: 120px 0 0px;
     background-color: $grey;
+}
+
+
+
+.followers_product-item {
+    width: 370px;
+    padding-bottom: 120px;
+}
+
+
+
+.followers {
+    .slick-list {
+        padding: 0 16.0px !important;
+        margin: 0 0px;
+    }
+
+    .slick-slide {
+        width: 403.5px !important;
+        padding: 0px 21.75px;
+        margin: 0 -5.25px;
+
+    }
+
+}
+
+.cont {
+    width: 1210px;
+    padding-right: 0px;
+    margin: 0 auto;
+    padding-left: 0px;
+
 }
 
 .slick-slide.slick-cloned.slick-active {
@@ -975,6 +1051,18 @@
         outline: none;
     }
 }
+
+.followers_create_btns {
+
+    &-popular,
+    &-view {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+
 
 // Finish develope section 'Followers'
 // Start develope section  'Band-Advantages'
@@ -1019,6 +1107,8 @@
 }
 
 .ico-smile {
+    margin-top: 1px;
+
     &:before {
         content: "\e908";
         position: absolute;
@@ -1050,19 +1140,188 @@
     }
 }
 
-.ico-cloud+div>div {
-    color: #58c9e9;
+.ico-cloud {
+
+    margin-top: -4 px;
+
+    &+div>div {
+        color: #58c9e9;
+    }
 }
-.band-advantages-inner{
+
+.ico-portfolio {
+    margin-top: -4px;
+}
+
+.band-advantages-inner {
     display: flex;
     margin: 0 auto;
 }
+
 .add {
-    &:before{
-        content:','
+    &:before {
+        content: ','
     }
 }
 
 
 //  Finish develope section  'Band-Advantages'
 //  Start develope section  'Why'
+
+.why {
+    background-color: #fff;
+    padding: 110px 0;
+
+    &_responsive {
+        width: 100%;
+        width: 355px;
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+
+        padding: 0px 30px;
+        margin: 15px 0;
+    }
+}
+
+  
+
+.why-title {
+    text-align: center;
+    font-size: 36px;
+    color: #000;
+
+    a {
+        font-size: 36px;
+        color: $blue;
+    }
+}
+
+.why-text {
+    font-size: 16px;
+    text-align: center;
+    width: 675px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.why {
+
+
+    &_responsive {
+        text-align: center;
+        width: 360px;
+
+        a img {
+            margin: 50px 0 25px;
+
+        }
+
+        padding-bottom: 30px;
+    }
+}
+
+.why-inner {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0 30px;
+}
+
+.first {
+    a img {
+        color: $blue;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.second {
+    a img {
+
+        width: 60px;
+        height: 55px;
+    }
+}
+
+.third {
+    a img {
+        width: 40px;
+        height: 50px;
+    }
+}
+
+.fourth {
+    a img {
+        width: 60px;
+        height: 60 px;
+    }
+}
+
+.fifth {
+    a img {
+        width: 60 px;
+        height: 60 px;
+    }
+}
+
+.sixth {
+    a img {
+        width: 60 px;
+        height: 50 px;
+    }
+}
+
+
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        color: #e5eafe;
+        left: 20px;
+        top: 20px;
+        font-size: 48px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+
+    }
+
+    &:focus,
+    &:hover {
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.5);
+        width: 365px; 
+        height: 370px; 
+        transition: .2s;       
+
+    }
+}
+
+.first:before {
+    content: '01';
+}
+
+.second:before {
+    content: '02';
+}
+
+.third:before {
+    content: '03';
+}
+
+.fourth:before {
+    content: '04';
+}
+
+.fifth:before {
+    content: '05';
+}
+
+.sixth:before {
+    content: '06';
+}
