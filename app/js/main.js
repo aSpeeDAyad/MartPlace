@@ -2,7 +2,8 @@
 $(function(){
 
 
-    for ( let i of document.querySelectorAll(".count") ) {
+    for ( let i of document.querySelectorAll(".count") ) {// прикручиваем счетчик цифр
+
 
         let numberTop = i.getBoundingClientRect().top,
             start = +i.innerHTML,
@@ -25,7 +26,8 @@ $(function(){
     $('.weekly_product-item').slick({});  // подключаем slick-slider
     $('.followers_items').slick({
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        wariableWidth: true,
     });  // подключаем slick-slider
 
     $('.slick-prev').html('<'); // меняем контент по дефолту с кнопкм слайдера
@@ -33,10 +35,13 @@ $(function(){
 
     $('.create_categories-list').on('click', function() {
         $('.category_drop-list').fadeToggle("slow");
+       
     });
 
     $('.create_categories-list').on('click', function() {
         
+      
+    
         $('.arrow').toggleClass('active') ;
     });
 
@@ -61,17 +66,25 @@ $(function(){
         }
 
     });
-    
-    
-
-
     var mixer = mixitup('.newest_items');
+
+ 
+    $('.slid').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows:true,
+      wariableWidth: true,
+  });
+
+
+        
+   
+
+
+ 
     
 
-    
-    
-    
-
+   
 
 });
 
