@@ -1395,7 +1395,7 @@
         margin-bottom: 50px;
     }
 
-   
+
     a {
         border-radius: 50px;
         background-color: #fff;
@@ -1405,12 +1405,103 @@
         padding: 20px 5px;
 
     }
-    &-blue-text.blue{
-        color:$blue;
+
+    &-blue-text.blue {
+        color: $blue;
     }
-    
+
 }
 
 .fluent-container {
     margin: 0 auto;
+}
+
+//  Finish develope section 'Sell-Buy' 
+//  Start develope section  'FeedBack'
+
+
+
+.feedback {
+    padding-bottom: 120px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+
+    }
+
+    &-item {
+        position: relative;
+
+        max-width: 555px;
+        width: 100%;
+        border-left: solid 2px $blue;
+        padding: 50px 40px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        &:after{
+            content:'';
+            position: absolute;
+            background-image: url(..//images/bubble.png);
+            right: 40px;
+            top:55px;
+            height: 60px;
+            width: 65px;
+            @include bg;
+
+        }
+        &-wrapper{
+
+            margin-left: 50px;
+            text-align: left;
+        }
+    }
+
+    &-item-box {
+
+        height: 80px;
+        justify-content: left;
+        padding-left: 0;
+        &-user{
+            font-size: 20px;
+            color:#000;
+            padding-top: 15px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            margin-top: -15px;
+        }
+
+        &-desigener {
+            color: $color-text !important;
+            margin-top: 0;
+        }
+    }
+
+    &-item-text {
+        text-align: left;
+        margin-top: 25px;
+    }
+    &-item-title {
+        color:black;
+    }
+
+    .sell-buy-blue {
+        border-radius: 50px;
+        background-color: $blue;
+        min-width: 190px;
+        color: #fff;
+        line-height: 0;
+        padding: 27px 5px;
+        margin: 0 auto;
+        text-align: center;
+        margin: 55px;
+    }
+
+    .container {
+        text-align: center;
+    }
+    
 }
