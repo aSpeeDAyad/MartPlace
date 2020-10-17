@@ -972,7 +972,7 @@
         }
     }
 
-    
+
     .slick-next {
         border-radius: 25px;
         border: none;
@@ -992,13 +992,14 @@
 
         }
 
-       
+
     }
+
     .slick-prev.slick-arrow {
         right: 130px;
-        }
+    }
 
-   
+
     .newest_product-card-avtor-avatar {
         margin-bottom: 0;
     }
@@ -1184,7 +1185,7 @@
     }
 }
 
-  
+
 
 .why-title {
     text-align: center;
@@ -1295,9 +1296,9 @@
     &:focus,
     &:hover {
         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.5);
-        width: 365px; 
-        height: 370px; 
-        transition: .3s;       
+        width: 365px;
+        height: 370px;
+        transition: .3s;
 
     }
 }
@@ -1324,4 +1325,92 @@
 
 .sixth:before {
     content: '06';
+}
+
+
+//  Finish develope section 'Why' 
+//  Start develope section  'Sell-Buy'
+.sell-buy {
+    margin: 0px 0px 100px;
+
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &-item {
+        min-height: 560px;
+        height: 100%;
+        width: 100%;
+        @include bg;
+        padding: 100px 0;
+
+        &-bg-blue {
+            background-image: url(../images/bg-sales.png);
+            min-height: 560px;
+            height: 100%;
+            width: 100%;
+        }
+
+        &-bg-purple {
+            background-image: url(../images/bg-start.png);
+            min-height: 560px;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &_wrapper {
+        text-align: center;
+    }
+
+    &-img-monitor {
+        margin: 0 auto;
+        text-align: center;
+        background-image: url(..//images/monitor.png);
+        width: 120px;
+        height: 100px;
+
+    }
+
+    &-img-buy {
+        margin: 0 auto;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        background-image: url(..//images/buy.png);
+    }
+
+    &-title {
+        margin-top: 45px;
+        font-size: 36px;
+        color: #fff;
+    }
+
+    &-text {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+
+   
+    a {
+        border-radius: 50px;
+        background-color: #fff;
+        min-width: 190px;
+        color: #7347c1;
+        line-height: 0;
+        padding: 20px 5px;
+
+    }
+    &-blue-text.blue{
+        color:$blue;
+    }
+    
+}
+
+.fluent-container {
+    margin: 0 auto;
 }
