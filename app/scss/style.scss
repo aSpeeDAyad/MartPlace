@@ -972,7 +972,11 @@
         }
     }
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 6cda6ee4248df6c36dafaedb126a92bdb78d8a00
     .slick-next {
         border-radius: 25px;
         border: none;
@@ -992,6 +996,7 @@
 
         }
 
+<<<<<<< HEAD
 
     }
 
@@ -999,7 +1004,15 @@
         right: 130px;
     }
 
+=======
+       
+    }
+    .slick-prev.slick-arrow {
+        right: 130px;
+        }
+>>>>>>> 6cda6ee4248df6c36dafaedb126a92bdb78d8a00
 
+   
     .newest_product-card-avtor-avatar {
         margin-bottom: 0;
     }
@@ -1185,7 +1198,11 @@
     }
 }
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 6cda6ee4248df6c36dafaedb126a92bdb78d8a00
 
 .why-title {
     text-align: center;
@@ -1296,9 +1313,15 @@
     &:focus,
     &:hover {
         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
         width: 365px;
         height: 370px;
         transition: .3s;
+=======
+        width: 365px; 
+        height: 370px; 
+        transition: .2s;       
+>>>>>>> 6cda6ee4248df6c36dafaedb126a92bdb78d8a00
 
     }
 }
@@ -1325,6 +1348,7 @@
 
 .sixth:before {
     content: '06';
+<<<<<<< HEAD
 }
 
 
@@ -1413,4 +1437,6 @@
 
 .fluent-container {
     margin: 0 auto;
+=======
+>>>>>>> 6cda6ee4248df6c36dafaedb126a92bdb78d8a00
 }
