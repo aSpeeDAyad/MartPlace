@@ -25,6 +25,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
+  .icon-cart:before {
+	content: "\e909";
+  }
   .icon-magic:before {
 	content: "\e903";
   }
