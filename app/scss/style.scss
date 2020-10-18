@@ -1567,4 +1567,134 @@
 
 
 //  Finish develope section 'FeedBack' 
-//  Start develope section  ''
+//  Start develope section  'Latest'
+
+
+.latest {
+    padding: 115px 0;
+    background-color: $grey;
+    &-item{
+        height:475px;        
+    }
+    &-wraper {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    &-blue{
+        background-color: #7385cd;
+    }
+    &-green{
+        background-color: #90bbc4;
+    }
+    &-pink{
+        background-color: #ac7fb8;
+    }
+
+    &-footer {
+        min-height: 60px;
+        border-top: 1px solid $grey;
+        background-color: #fff;
+        margin-top: 30px;
+
+        &-wrapper {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            min-height: 60px;
+
+        }
+
+        &-left {
+        }
+
+        &-data {
+            margin-left: 20px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../images/clock.png);
+                top: 6px;
+                height: 16px;
+                width: 16px;
+                left: -20px;
+
+            }
+        }
+
+        &-right {
+            padding-left:30px;
+            display: flex;
+        }
+
+        &-qwesions {
+            margin-right: 60px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../images/bubble.png);
+                top: 6px;
+                height: 16px;
+                width: 18px;
+                left: -23px;
+                @include bg;
+
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../images/bubble.png);
+                top: 6px;
+                height: 16px;
+                width: 18px;
+                left: -25px;
+                @include bg;
+
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                background-image: url(../images/bubble.png);
+                top: 6px;
+                height: 16px;
+                width: 18px;
+                left: -24px;
+                @include bg;
+
+            }
+
+        }
+
+        &-viewes {
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../images/eye.png);
+                top: 10px;
+                height: 10px;
+                width: 16px;
+                left: -25px;
+                @include bg;
+
+            }
+        }
+    }
+    .newest_foto-product{
+        height: 230px ;
+    }
+
+}
+.breake {
+    min-height: 40px;
+    width: 1px;
+    margin: 0 auto;
+    background-color: $grey;
+    padding: 0px 1px;
+}
