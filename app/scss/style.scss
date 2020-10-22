@@ -1573,22 +1573,27 @@
 .latest {
     padding: 115px 0;
     background-color: $grey;
-    &-item{
-        height:475px;        
+
+    &-item {
+        height: 475px;
     }
+
     &-wraper {
         display: flex;
         justify-content: space-between;
-        
-        
+
+
     }
-    &-blue{
+
+    &-blue {
         background-color: #7385cd;
     }
-    &-green{
+
+    &-green {
         background-color: #90bbc4;
     }
-    &-pink{
+
+    &-pink {
         background-color: #ac7fb8;
     }
 
@@ -1606,8 +1611,7 @@
 
         }
 
-        &-left {
-        }
+        &-left {}
 
         &-data {
             margin-left: 20px;
@@ -1626,7 +1630,7 @@
         }
 
         &-right {
-            padding-left:30px;
+            padding-left: 30px;
             display: flex;
         }
 
@@ -1645,6 +1649,7 @@
                 @include bg;
 
             }
+
             &:before {
                 content: '';
                 position: absolute;
@@ -1656,6 +1661,7 @@
                 @include bg;
 
             }
+
             &:after {
                 content: '';
                 position: absolute;
@@ -1686,11 +1692,13 @@
             }
         }
     }
-    .newest_foto-product{
-        height: 230px ;
+
+    .newest_foto-product {
+        height: 230px;
     }
 
 }
+
 .breake {
     min-height: 40px;
     width: 1px;
@@ -1698,3 +1706,90 @@
     background-color: $grey;
     padding: 0px 1px;
 }
+
+//  Finish develope section 'Latest' 
+//  Start develope section  'Benefits'
+.benefits {
+    background-color: #fff;
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-inner-baks {
+        display: inline-block;
+        border-right:$grey 1px solid;
+        width: 571px;
+        word-wrap: break-word;
+        text-align: right;
+        padding: 60px 0px;
+
+
+    }
+
+    &-inner-man {
+        display: inline-block;
+        width: 571px;
+        word-wrap: break-word;
+        border-left:$grey 1px solid;
+        margin-left: -1px;
+        padding: 60px 0px;
+
+        
+    }
+
+    &-item-baks {
+        display: inline-block;
+        padding-right: 130px;
+        max-width: 571px;
+        word-wrap: break-word;
+    }
+
+    &-item-man {
+        display: inline-block;
+        padding-left: 130px;
+        margin-right: auto;
+        max-width: 571px;
+        word-wrap: break-word;
+    }
+
+
+
+
+
+    &-img {
+        @include bg;
+        width: 150px;
+        height: 120px;
+        margin: 0 auto;
+
+    }
+
+    &-text {
+        margin-top: 30px;
+        font-size: 24px;
+        color: black;
+        text-align: center;
+
+
+
+        a {
+            color: blue;
+            font-size: 24px;
+        }
+    }
+
+}
+
+.baks {
+
+    background-image: url(..//images/baks.png);
+}
+
+.man {
+    background-image: url(..//images/user.png);
+
+}
+
+//  Finish develope section 'Benefits' 
+//  Start develope section  ''
