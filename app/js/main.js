@@ -79,7 +79,14 @@ $(function(){
 
         
    
-
+  
+ 
+    $(".star,.weekly_product-card-footer-stars,.newest_product-card-footer-stars").rateYo({
+      rating:5,
+      starWidth: "12px"
+    });
+   
+ 
 
  
     
