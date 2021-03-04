@@ -1,0 +1,18 @@
+$color-text: #555555;
+$blue:#0674ec;
+$perpal:#7347c1;
+$grey:#eff1f5;
+$bgc:#284bce;
+@mixin f500 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+@mixin f700 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+@mixin bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
