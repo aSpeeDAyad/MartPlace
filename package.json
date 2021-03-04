@@ -25,5 +25,8 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^6.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "git": "^0.1.5",
+    "global": "^4.4.0"
+  }
 }
